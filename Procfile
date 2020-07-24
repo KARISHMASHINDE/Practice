@@ -1,1 +1,1 @@
- web: gunicorn apitrail.wsgi
+ web: gunicorn restaurant_menu_card.wsgi
