@@ -10,6 +10,9 @@ from django.http import Http404
 
 
 # Create your views here.
+
+'''To display List of Food Category'''
+
 @api_view(['GET','POST'])
 def ListFoodCategory(request,pk=id):        
     if request.method == 'GET':
@@ -31,6 +34,8 @@ def ListFoodCategory(request,pk=id):
             data = {"error": " obj does not exist"}
             status_code = status.HTTP_400_BAD_REQUEST 
             
+'''To display List of FoodList According to Category''' 
+          
 @api_view(['GET','POST'])
 def ListFoodDetails(request):
     if request.method == 'GET': 
@@ -53,6 +58,8 @@ def ListFoodDetails(request):
         return Response(res, status = status_code)  
     
     
+'''To display List of Single Food'Dish along with search bar'''
+
     
 @api_view(['GET','POST'])
 def DishDetails(request):             
