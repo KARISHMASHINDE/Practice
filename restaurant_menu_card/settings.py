@@ -25,7 +25,7 @@ SECRET_KEY = '3c^eifo3)s!2n)^ggt+v*yc+k=v6&bge_lpajnopn7qxz))l_='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [parctice.herokuapp.com]
+ALLOWED_HOSTS = ['parctice.herokuapp.com']
 
 
 # Application definition
