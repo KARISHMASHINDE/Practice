@@ -25,7 +25,7 @@ SECRET_KEY = '3c^eifo3)s!2n)^ggt+v*yc+k=v6&bge_lpajnopn7qxz))l_='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [parctice.herokuapp.com]
 
 
 # Application definition
@@ -119,4 +119,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
+
 STATIC_URL = '/static/'
+
+
+django_heroku.settings(locals())
